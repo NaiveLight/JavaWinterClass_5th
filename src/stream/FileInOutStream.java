@@ -1,6 +1,5 @@
 package stream;
 
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -28,27 +27,27 @@ public class FileInOutStream {
 //		}
 		
 		//FileInputStream finput = null;
-		FileReader finputread = null;
-		//InputStreamReader isr = null;
-		
-		try {
-			finputread = new FileReader("a.txt");
-			//isr = new InputStreamReader(finput);
-			int i;
-			
-			while ((i=finputread.read()) != -1){
-				System.out.print((char)i);
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if(finputread != null)
-				   finputread.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
+//		FileReader finputread = null;
+//		//InputStreamReader isr = null;
+//		
+//		try {
+//			finputread = new FileReader("a.txt");
+//			//isr = new InputStreamReader(finput);
+//			int i;
+//			
+//			while ((i=finputread.read()) != -1){
+//				System.out.print((char)i);
+//			}
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		} finally {
+//			try {
+//				if(finputread != null)
+//				   finputread.close();
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
+//		}
 		
 		FileWriter foutput = null;
 		
@@ -67,7 +66,8 @@ public class FileInOutStream {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-		} 
+		}
+		
 	}
 
 }
