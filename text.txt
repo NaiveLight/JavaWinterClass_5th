@@ -1,0 +1,32 @@
+자바에는 다양한 스트림 클래스가 존재한다.
+File I/O
+Device
+Network
+Memory
+
+스트림의 종류를 세 분류로 나눌 수 있다.
+대상 기준
+InputStream
+OutputStream
+
+데이터 종류 기준
+Byte단위 Stream  inputStrem
+문자 단위 Stream  Reader
+
+기능 기준
+1차 Stream
+2차 Stream (보조 or Wrapper Stream)  
+ - 저수준 Stream 객체에 대한 레퍼런스를 가지고 있으며, 저수준 스트림을 사용하여 더 많은 기능을 제공한다. 
+ 1차 Stream + @ 라고 생각하면 된다. Decorator
+
+문자 인코딩
+- 일련의 문자들의 모임인 문자세트를 컴퓨터가 처리할 수 있는 방식으로 문자를 표현
+
+인코딩 변환 In Java
+String 클래스의 byte[] getBytes(String encoding= )
+new String(byte[] bytes, int start=0, int length=this.length(), 
+
+표준 I/O Stream - out, in, err
+
+
+
