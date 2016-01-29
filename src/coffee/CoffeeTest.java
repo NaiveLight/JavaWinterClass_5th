@@ -19,6 +19,5 @@ public class CoffeeTest {
 		Mocha kenyaMocha = new Mocha(kenya);
 		kenyaMocha.brewing();
 	}
-	
 
 }

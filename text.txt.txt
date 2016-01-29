@@ -28,5 +28,28 @@ new String(byte[] bytes, int start=0, int length=this.length(),
 
 표준 I/O Stream - out, in, err
 
+*Thread
+
+(IPC, Inter Process Connection)
+OS - > 여러 개의 Process
+Process - > 여러 개의 Thread
+
+thread는 각각 자신만의 context를 가짐
+thread가 공유하는 자원 static
+racecondition 발생
+critical section
+안드로이드에서는 Runnable을 주로 사용한다.
+
+Thread들이 Runnable들에 들어가있다가 CPU를 점유하게되는 Thread가 Run되는 것.
+sleep(), wait(), join()을 사용항 NotRunnable 영역으로 이동
+sleep은 시간이 지난 후 , wait은 notify(), join()은 다른 thread exit시 Runnable 영역으로 이동
+Thread가 종료되면 Dead영역
 
 
+Thread의 Priority에 따라 실행되는 우선순위가 달라짐
+(1~10)
+
+semaphore = 열쇠
+
+get() critical section 이용
+re
